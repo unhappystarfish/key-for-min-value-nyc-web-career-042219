@@ -14,12 +14,13 @@ def key_for_min_value(name_hash)
 
   comparison_value = array[0]
   counter = 0
-  array.each do
-    if array[counter] < comparison_value
-      comparison_value = array[counter]
+  array.each do |integer|
+    if integer < comparison_value
+      comparison_value = integer
       counter += 1
     end
   end
+  puts comparison_value
 
   name_hash.each do |key, value|
     if value == comparison_value
