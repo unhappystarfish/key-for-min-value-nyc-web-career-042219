@@ -11,16 +11,20 @@ def key_for_min_value(name_hash)
     array.push(value)
   end
 
-  min_val = 0
-  for i in array
-    if i < i[array.index(i)-1] and i < min_val
-		  min_val = i
-		end
+def array_test(array)
+  comparison_value = array[0]
+  counter = 0
+  array.each do
+    if array[counter] < comparison_value
+      comparison_value = array[counter]
+      counter += 1
+    end
   end
+end
 
   name_hash.each do |key, value|
     if value == i
-      return key
+      return comparison_value
     end
   end
 end
