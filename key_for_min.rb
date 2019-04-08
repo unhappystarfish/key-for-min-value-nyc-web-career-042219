@@ -11,7 +11,7 @@ def key_for_min_value(name_hash)
     array.push(value)
   end
 
-def array_test(array)
+
   comparison_value = array[0]
   counter = 0
   array.each do
@@ -20,7 +20,6 @@ def array_test(array)
       counter += 1
     end
   end
-end
 
   name_hash.each do |key, value|
     if value == comparison_value
