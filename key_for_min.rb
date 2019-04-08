@@ -23,8 +23,8 @@ def array_test(array)
 end
 
   name_hash.each do |key, value|
-    if value == i
-      return comparison_value
+    if value == comparison_value
+      return key
     end
   end
 end
